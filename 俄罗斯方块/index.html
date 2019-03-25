@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>俄罗斯方块</title>
+	<style>
+		#contain{
+			margin: 0 auto;
+			width: 450px;
+			height: 500px;
+			border: 1px red solid;
+			background-color: black;
+			color: white;
+		}
+		#gameMap{
+			width: 200px;
+			height: 400px;
+		}
+		#next{
+			width: 80px;
+			height: 80px;
+		}
+		#next .none{
+			background-color: pink;
+		}
+		.map{
+			margin: 50px 0 0 50px;
+			float: left;
+			position: relative;
+			border: 1px gray solid;
+		}
+		.map>div{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			box-sizing: border-box;
+			border-width: 1px;
+			border-style: solid;
+		}
+		.curr{
+			border-color: yellow;
+			background-color: orange;
+		}
+		.none{
+			border-color: gray;
+			background-color: cyan;
+		}
+		.preci{
+			border-color: green;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div id="contain">
+		<div id="gameMap" class='map'></div>
+		<div id="next" class='map'></div>
+		<div id="grade" class='map'>得分：0</br>游戏运行中</br>最高成绩：0</div>
+	</div>
+</body>
+<script src='js/context.js'></script>
+<script src='js/square.js'></script>
+<script src='js/main.js'></script>
+</html>
